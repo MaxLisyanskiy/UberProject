@@ -15,19 +15,22 @@ nav
     height: 50px
     background-color: #212121
     
-.title
+.title, .title_white
     margin: 0 auto
     padding: 5px 12px
+    background-color:#000000
+    color: #ffffff
     width: 112px
     height: 24px
-    background-color: #000000
-    color: #ffffff
     font-size: 11px
     font-weight: 400
     text-transform: uppercase
     text-align: center
+    &_white
+        background-color: #ffffff 
+        color: #000000 
 
-.subtitle
+.subtitle, .subtitle_white
     margin-top: 38px
     color: #222222
     font-size: 38px
@@ -35,14 +38,18 @@ nav
     text-transform: uppercase
     text-align: center
     border-bottom: 40px
+    &_white
+        color: #fff
 
-.subdescr
+.subdescr, .subdescr_white
     margin-top: 19px
     color: #222222
     font-size: 17px
     font-weight: 400
     text-align: center
     margin-bottom: 0
+    &_white
+        color: #fff
 
 .menu
     display: flex
@@ -221,4 +228,30 @@ nav
             height: 26px
             background-color: #000000
             cursor: pointer
+
+.choose
+    padding-top: 57px
+    min-height: 499px
+    background: url('../img/bg/Dark_blue.png') center center/cover no-repeat
+
+.car
+    position: relative
+    min-height: 397px
+    background: url('../img/bg/Blue.png') center center/cover no-repeat
+    &_img
+        display: block
+        left: 50%
+        transform: translateX(-50%)
+        position: absolute
+        top: -240px
+    &_descr
+        position: absolute
+        margin-top: 217px
+        left: 50%
+        transform: translateX(-50%)
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
 

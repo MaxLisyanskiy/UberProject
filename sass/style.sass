@@ -4,6 +4,11 @@
     padding: 0
     margin: 0
 
+$blue: #1ca8c3
+$red: #ff5656
+$white: #ffffff
+$black: #000000
+
 header
     position: relative
     height: 50px
@@ -13,13 +18,13 @@ nav
     width: 100%
     z-index: 2
     height: 50px
-    background-color: #212121
+    background-color: $black
     
 .title, .title_white
     margin: 0 auto
     padding: 5px 12px
-    background-color:#000000
-    color: #ffffff
+    background-color: $black
+    color: $white
     width: 112px
     height: 24px
     font-size: 11px
@@ -27,11 +32,12 @@ nav
     text-transform: uppercase
     text-align: center
     &_white
-        background-color: #ffffff 
-        color: #000000 
+        background-color: $white 
+        color: $black 
 
 .subtitle, .subtitle_white
-    margin-top: 38px
+    margin-top: 33px
+    margin-bottom: 0
     color: #222222
     font-size: 38px
     font-weight: 700
@@ -39,17 +45,17 @@ nav
     text-align: center
     border-bottom: 40px
     &_white
-        color: #fff
+        color: $white
 
 .subdescr, .subdescr_white
-    margin-top: 19px
+    margin-top: 8px
     color: #222222
     font-size: 17px
     font-weight: 400
     text-align: center
     margin-bottom: 0
     &_white
-        color: #fff
+        color: $white
 
 .menu
     display: flex
@@ -58,7 +64,7 @@ nav
     margin: 0
     list-style-type: none
     &_link
-        color: #ffffff
+        color: $white
         font-size: 15px
         font-weight: 300
     &_item
@@ -77,19 +83,19 @@ nav
         margin-top: 16px
     &_official
         margin-top: 6px
-        color: #ffffff
+        color: $white
         font-size: 13px
         font-weight: 400
     &_call
         text-align: right
         margin-top: 18px
-        color: #ffffff
+        color: $white
         font-size: 12px
         font-weight: 300
     &_phone
         display: block
         text-align: right
-        color: #ffffff
+        color: $white
         font-size: 22px
         font-weight: 400
         text-transform: uppercase
@@ -102,7 +108,7 @@ nav
         border-radius: 4px
         background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-        color: #ffffff
+        color: $white
         font-size: 14px
         font-weight: 400
         text-transform: uppercase
@@ -115,7 +121,7 @@ nav
     &_header
         margin-top: 67px
         margin-bottom: 0
-        color: #ffffff
+        color: $white
         font-size: 60px
         line-height: 60px
         font-weight: 700
@@ -124,14 +130,14 @@ nav
     &_subheader
         margin-top: 22px
         margin-bottom: 0
-        color: #ffffff
+        color: $white
         font-weight: 700
         font-size: 36px
         line-height: 36px
         text-align: center
     &_descr
         margin-top: 23px
-        color: #ffffff
+        color: $white
         font-size: 18px
         font-weight: 400
         line-height: 24px
@@ -146,7 +152,7 @@ nav
         border-radius: 4px
         background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-        color: #ffffff
+        color: $white
         font-size: 14px
         font-weight: 400
         text-transform: uppercase
@@ -166,7 +172,7 @@ nav
         align-items: center
         width: 113px
         height: 113px
-        background-color: #1eacc7
+        background-color: $blue
         border-radius: 100%
     &_icons
         display: block
@@ -179,7 +185,7 @@ nav
         font-weight: 300
         line-height: 21px
         span
-            color: #1eacc7
+            color: $blue
             font-size: 17px
             font-weight: 400
             margin-bottom: 8px
@@ -210,7 +216,7 @@ nav
         &_6
             background: url('../img/bg/mobile_screen_6.jpg') center center/cover no-repeat
         &_subtitle
-            color: #ffffff
+            color: $white
             font-size: 24px
             font-weight: 400
             text-transform: uppercase
@@ -226,7 +232,7 @@ nav
             border-radius: 100%
             width: 26px
             height: 26px
-            background-color: #000000
+            background-color: $black
             cursor: pointer
 
 .choose
@@ -255,3 +261,15 @@ nav
         line-height: 24px
         text-align: center
 
+.map
+    padding: 49px 0
+    min-height: 717px
+    background: url('../img/bg/map.jpg') center center/cover no-repeat
+    &_link
+        display: block
+        margin-top: 486px
+        color: $blue
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center

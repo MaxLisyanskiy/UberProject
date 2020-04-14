@@ -349,10 +349,30 @@ nav
         text-align: center
 
 .footer
-    display: flex
-    justify-content: space-between
-    align-items: center
-    padding: 14px
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 14px
+    &_wrapper > div
+        width: 33%
+        &:nth-child(3)
+            display: flex
+            justify-content: flex-end
+    &_social
+        width: 160px
+        display: flex
+        justify-content: space-between
+        &_item
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 100%
+            width: 32px
+            height: 32px
+            background-color: #070716
+            i
+                color: $white
     &_links
         display: flex
         flex-direction: column
@@ -387,3 +407,4 @@ nav
                 font-size: 11px
                 font-weight: 300
                 text-transform: uppercase
+
